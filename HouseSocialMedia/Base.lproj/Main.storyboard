@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="HouseSocialMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment-architectural-design-architecture-1115804" translatesAutoresizingMaskIntoConstraints="NO" id="O8W-rb-PwP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpx-f2-dXU">
+                                <rect key="frame" x="16" y="20" width="343" height="106"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbM-Wq-Net">
+                                        <rect key="frame" x="8" y="10" width="327" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="C7o-PF-8Be"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TcP-EQ-tXh">
+                                        <rect key="frame" x="8" y="57" width="327" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="0LU-hB-WxC"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TcP-EQ-tXh" secondAttribute="trailing" constant="8" id="Foc-lH-8A0"/>
+                                    <constraint firstItem="BbM-Wq-Net" firstAttribute="top" secondItem="Zpx-f2-dXU" secondAttribute="top" constant="10" id="GnA-5U-Tyl"/>
+                                    <constraint firstItem="BbM-Wq-Net" firstAttribute="leading" secondItem="Zpx-f2-dXU" secondAttribute="leading" constant="8" id="Np9-40-qbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="TcP-EQ-tXh" secondAttribute="bottom" constant="15" id="WJ3-92-2Rr"/>
+                                    <constraint firstItem="TcP-EQ-tXh" firstAttribute="top" secondItem="BbM-Wq-Net" secondAttribute="bottom" constant="13" id="hQn-sh-VmS"/>
+                                    <constraint firstAttribute="trailing" secondItem="BbM-Wq-Net" secondAttribute="trailing" constant="8" id="tfD-zC-E7E"/>
+                                    <constraint firstItem="TcP-EQ-tXh" firstAttribute="leading" secondItem="Zpx-f2-dXU" secondAttribute="leading" constant="8" id="yxc-ls-y5H"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moV-Wb-EiR">
+                                <rect key="frame" x="16" y="138" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="99m-zr-heD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.59999999999999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kL-B5-PyC">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="FN0-bw-K3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Register new account">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.59999999999999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-Nt-zTk">
+                                <rect key="frame" x="16" y="193" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gF1-Hh-69l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="forgot password?">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.59999999999999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="moV-Wb-EiR" secondAttribute="trailing" constant="16" id="0d8-zg-Ayj"/>
+                            <constraint firstItem="pLy-Nt-zTk" firstAttribute="top" secondItem="moV-Wb-EiR" secondAttribute="bottom" constant="15" id="62y-gW-iaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8W-rb-PwP" secondAttribute="trailing" id="9pa-xD-Te6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pLy-Nt-zTk" secondAttribute="trailing" constant="16" id="EiF-cJ-Fco"/>
+                            <constraint firstItem="moV-Wb-EiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hdi-BK-glD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1kL-B5-PyC" secondAttribute="bottom" constant="20" id="I6M-iB-Fg2"/>
+                            <constraint firstAttribute="bottom" secondItem="O8W-rb-PwP" secondAttribute="bottom" id="Q2H-QN-1cc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1kL-B5-PyC" secondAttribute="trailing" constant="16" id="QgQ-t8-rAw"/>
+                            <constraint firstItem="pLy-Nt-zTk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RAF-o7-qMH"/>
+                            <constraint firstItem="Zpx-f2-dXU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SER-jQ-oIk"/>
+                            <constraint firstItem="moV-Wb-EiR" firstAttribute="top" secondItem="Zpx-f2-dXU" secondAttribute="bottom" constant="12" id="WtR-TP-H8e"/>
+                            <constraint firstItem="O8W-rb-PwP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l3E-BH-08p"/>
+                            <constraint firstItem="O8W-rb-PwP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qvN-C5-hme"/>
+                            <constraint firstItem="1kL-B5-PyC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vTf-da-Nws"/>
+                            <constraint firstItem="Zpx-f2-dXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="w3o-1C-Pbk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zpx-f2-dXU" secondAttribute="trailing" constant="16" id="zOW-4z-hYg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textFieldsView" destination="Zpx-f2-dXU" id="fle-A9-8d9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="110.19490254872565"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apartment-architectural-design-architecture-1115804" width="3024" height="3024"/>
+    </resources>
 </document>
